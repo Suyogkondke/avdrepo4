@@ -2,17 +2,17 @@
 name : github action demo pipeline
 #trigger event
 on:
-  push:
-    branches:
-      -main
+   push:
+     branches:
+      - main
 
 jobs:
   demo-job:
     runs-on: ubuntu -latest
 
     steps:
-       -name: checkout code
-       uses: actions/checkout@v2
+       - name: checkout code
+         uses: actions/checkout@v2
 
-       -name: print messages
-       run: echo "welcome to github actions"
+       - name: print message
+         run: echo "welcome to github actions"
