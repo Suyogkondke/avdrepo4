@@ -1,18 +1,19 @@
 #name of workflow
-name : github action demo pipeline
+name: github action demo pipeline
+
 #trigger event
 on:
    push:
-     branches:
-      - main
+        branches:
+          - main
 
 jobs:
-  demo-job:
-    runs-on: ubuntu -latest
+    demo-job:
+      runs-on: ubuntu-latest
 
-    steps:
-       - name: checkout code
-         uses: actions/checkout@v2
+      steps:
+        - name: checkout code
+          uses: actions/checkout@v2
 
-       - name: print message
-         run: echo "welcome to github actions"
+        - name: print message
+          run: echo "welcome to github actions"
