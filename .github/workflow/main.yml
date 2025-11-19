@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu -latest
 
     steps:
-      -name:checkout code
-      uses:actions/checkout@v2
+       -name: checkout code
+       uses: actions/checkout@v2
 
-      -name :print messages
-      run:echo "welcome to github actions"
+       -name: print messages
+       run: echo "welcome to github actions"
